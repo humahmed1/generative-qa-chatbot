@@ -11,7 +11,7 @@ Before running the application, make sure you have the following installed:
 
 ## Configuration
 
-1. Replace `<OPEN_AI_API_KEY>` in `openai_config.py` with your OpenAI API key.
+1. Replace `<OPEN_AI_API_KEY>` in `src/openai_config.py` with your OpenAI API key.
 2. Place the CSV data file (`ml_project1_data_short.csv`) in the project directory.
 
 ## Usage
@@ -20,9 +20,10 @@ To run the chatbot GUI application, execute `chatbot_gui.py`. The GUI allows use
 
 ## File Structure
 
-- `openai_config.py`: OpenAI API key configuration.
-- `data_loader.py`: Handles loading and processing of CSV data.
-- `chatbot_core.py`: Contains the logic for chatbot functionality using Langchain and OpenAI.
+- **`src/`**
+  - `openai_config.py`: Handles OpenAI API key configuration.
+  - `data_loader.py`: Manages loading and processing of CSV data.
+  - `chatbot_core.py`: Contains the logic for chatbot functionality using Langchain and OpenAI.
 - `chatbot_gui.py`: GUI implementation for user interaction with the chatbot.
 
 ## How It Works
