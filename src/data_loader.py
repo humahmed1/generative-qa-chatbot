@@ -4,10 +4,6 @@ import cv2
 import pytesseract
 import numpy as np
 
-pytesseract.pytesseract.tesseract_cmd = (
-    r"/usr/local/Cellar/tesseract/5.3.2_1/bin/tesseract"
-)
-
 
 # load csv table for tqa
 def load_csv_data(file_path):

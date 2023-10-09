@@ -3,8 +3,8 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.vectorstores import DocArrayInMemorySearch
 from langchain.embeddings.openai import OpenAIEmbeddings
-import openai_config
 from data_loader import draw_column_separator, extract_table_data
+from src import openai_config
 
 # use gpt-3.5-turbo model and create embeddings
 llm = ChatOpenAI(
@@ -26,7 +26,7 @@ def initialize_retrieval_qa(docs, kwargs):
 
 def prompt_engineering():
     # add information from the dictionary as context
-    dictionary_path = "dictionary.png"
+    dictionary_path = "resources/dictionary.png"
     processed_dictionary = draw_column_separator(dictionary_path)
     df = extract_table_data(processed_dictionary)
 

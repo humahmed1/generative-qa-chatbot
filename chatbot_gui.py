@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import Scrollbar, Text, Entry, Button
-import chatbot_core
-import data_loader
+
+from src import data_loader, chatbot_core
 
 
 def get_response():
@@ -26,7 +26,7 @@ root.title("Chatbot GUI")
 root.configure(bg="#FFB6C1")  # Set main color to pink
 
 # Initialize data and chatbot
-docs = data_loader.load_csv_data("ml_project1_data_short.csv")
+docs = data_loader.load_csv_data("src/resources/ml_project1_data.csv")
 kwargs = chatbot_core.prompt_engineering()
 chain = chatbot_core.initialize_retrieval_qa(docs, kwargs)
 
