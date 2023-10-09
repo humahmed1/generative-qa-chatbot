@@ -1,6 +1,6 @@
 # Chatbot with Table Question Answering
 
-This project implements a chatbot with table question answering capabilities using OpenAI's GPT-3.5 Turbo model and Langchain library. The chatbot allows users to ask questions related to a table of data and provides answers based on the information in the table.
+This project implements a generative AI chatbot with table question answering capabilities using OpenAI's GPT-3.5 Turbo model and Langchain library. The chatbot allows users to ask questions related to a table of data and provides answers based on the information in the table.
 
 ## Prerequisites
 
